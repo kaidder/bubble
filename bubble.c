@@ -10,8 +10,13 @@ int main( int argc, const char* argv[] )
 //  int arreglo[100], n, c, d, swap;
   int arreglo[100];
   int n,c,d,swap;
-  printf("Enter number of elements\n");
+  printf("Enter the elements in between the range of 1 & 101\n");
   scanf("%d", &n);
+  while(n<=0 || n>100)
+  {
+    printf("Enter the elements in between the range of 1 & 101\n");
+    scanf("%d", &n);  
+  }
  
   printf("Enter %d integers\n", n);
   
